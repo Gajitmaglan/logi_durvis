@@ -1,0 +1,80 @@
+<!-- carousel -->
+<style>
+  .carousel-item {
+    height: 32rem;
+    background: #999;
+    color: white;
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+  }
+  .carousel .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+  }
+</style>
+<section class="carousel">
+  <div
+    id="myCarousel"
+    class="carousel slide carousel-fade"
+    data-ride="carousel"
+  >
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div
+        class="carousel-item active"
+        style="background-image: url(./slide-1.jpg)"
+      >
+        <div class="container">
+          <h1>Example headline</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum atque
+            expedita, pariatur vel numquam quia inventore quae vero, laboriosam
+            tempore nemo omnis. Laborum dicta facilis vero deleniti totam veniam
+            odio.
+            <!-- <br />
+                <a href="#" class="btn btn-lg btn-primary"> sign up today! </a> -->
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <h1>next headline</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum atque
+            expedita, pariatur vel numquam quia inventore quae vero, laboriosam
+            tempore nemo omnis. Laborum dicta facilis vero deleniti totam veniam
+            odio.
+            <!-- <br /> -->
+            <!-- <a href="#" class="btn btn-lg btn-primary"> sign up today! </a> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#myCarousel"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Prev</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#myCarousel"
+      role="button"
+      data-slide="next"
+    >
+      <span class="sr-only">Next</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+</section>
