@@ -68,31 +68,40 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#about">О нас</a>
+              <a class="nav-link navLink1" href="#about">О нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Услуги</a>
+              <a class="nav-link navLink2" href="#services">Услуги</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#what-we-do">Чем занимаемся</a>
+              <a class="nav-link navLink3" href="#what-we-do">Чем занимаемся</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Портфолио</a>
+              <a class="nav-link navLink4" href="#portfolio">Портфолио</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work-specs">Спуцифика работы</a>
+              <a class="nav-link navLink5" href="#work-specs"
+                >Спуцифика работы</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#carousel">Было и стало</a>
+              <a class="nav-link navLink6" href="#carousel">Было и стало</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Контакты</a>
+              <a class="nav-link navLink7" href="#contact">Контакты</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">
-                <!-- <i class="bi bi-translate"></i> -->
-                <span class="fi fi-ru"></span>
+              <a
+                class="nav-link languageFlags"
+                href="javascript:void(0);"
+                onclick="changeFlag()"
+              >
+                <span class="fi fi-ru" id="languageFlag"></span>
               </a>
+              <!-- <a class="nav-link" id="languageFlag" href=""> -->
+              <!-- <i class="bi bi-translate"></i> -->
+              <!-- <span class="fi fi-ru"></span>
+              </a> -->
             </li>
           </ul>
         </div>
@@ -105,7 +114,7 @@
           class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
         >
           <div class="col-lg-8 align-self-end">
-            <h1 class="text-white font-weight-bold">
+            <h1 class="text-white font-weight-bold mostheadH1">
               🏠Добро пожаловать в нашу строительную фирму!
               <br />🔧🏗️🚪🔌
             </h1>
@@ -114,12 +123,14 @@
             <br />
           </div>
           <div class="col-lg-8 align-self-baseline">
-            <p class="text-white-75 mb-5">
+            <p class="text-white-75 mb-5 mostheadP">
               Начните сотрудничать с нами и получите незабываемый опыт, отменное
               качество работы, внимание к деталям и быстрое выполнение
               поставленных задач!
             </p>
-            <a class="btn btn-primary btn-xl" href="#about">Узнать больше</a>
+            <a class="btn btn-primary btn-xl mostheadA" href="#about"
+              >Узнать больше</a
+            >
           </div>
         </div>
       </div>
@@ -129,13 +140,17 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">Посмотрите как это делаем мы!</h2>
+            <h2 class="text-white mt-0 aboutH2">
+              Посмотрите как это делаем мы!
+            </h2>
             <hr class="divider divider-light" />
-            <p class="text-white-75 mb-4">
+            <p class="text-white-75 mb-4 aboutP">
               Мы не стесняемсы показывать наши работы, потому что каждый
               завершённый объект - это наша гордость!
             </p>
-            <a class="btn btn-light btn-xl" href="#carousel">Посмотреть</a>
+            <a class="btn btn-light btn-xl aboutA" href="#carousel"
+              >Посмотреть</a
+            >
           </div>
         </div>
       </div>
@@ -143,7 +158,7 @@
     <!-- Services-->
     <section class="page-section bg-white text-black pb-5" id="services">
       <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">К Вашим услугам</h2>
+        <h2 class="text-center mt-0 servicesH2">К Вашим услугам</h2>
         <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
           <div class="col-lg-3 col-md-6 text-center">
@@ -152,8 +167,8 @@
                 <!-- <i class="bi-gem fs-1 text-primary"></i> -->
                 <i class="bi bi-tools fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Любая сложность</h3>
-              <p class="text-muted mb-0">
+              <h3 class="h4 mb-2 serviceH3_1">Любая сложность</h3>
+              <p class="text-muted mb-0 serviceP_1">
                 - Выполнение отделочных/облицовочных работ любой сложности
               </p>
             </div>
@@ -164,8 +179,8 @@
                 <!-- <i class="bi-laptop fs-1 text-primary"></i> -->
                 <i class="bi bi-currency-euro fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Выгодно</h3>
-              <p class="text-muted mb-0">
+              <h3 class="h4 mb-2 serviceH3_2">Выгодно</h3>
+              <p class="text-muted mb-0 serviceP_2">
                 Возможность подстройки под ваш бюджет.
               </p>
             </div>
@@ -176,8 +191,10 @@
                 <!-- <i class="bi-globe fs-1 text-primary"></i> -->
                 <i class="bi bi-calendar-week fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Всегда в деле</h3>
-              <p class="text-muted mb-0">- Работу по выходным дням.</p>
+              <h3 class="h4 mb-2 serviceH3_3">Всегда в деле</h3>
+              <p class="text-muted mb-0 serviceP_3">
+                - Работу по выходным дням.
+              </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
@@ -186,8 +203,8 @@
                 <!-- <i class="bi-heart fs-1 text-primary"></i> -->
                 <i class="bi bi-speedometer fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Быстро</h3>
-              <p class="text-muted mb-0">
+              <h3 class="h4 mb-2 serviceH3_4">Быстро</h3>
+              <p class="text-muted mb-0 serviceP_4">
                 - Реализацию проектов в сжатые сроки.
               </p>
             </div>
@@ -200,9 +217,9 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-12 text-center">
-            <h2 class="text-black mt-0">Чем мы занимаемся?</h2>
+            <h2 class="text-black mt-0 wwdH2">Чем мы занимаемся?</h2>
             <hr class="divider" />
-            <p class="text-black-75 mb-2 fs-4">
+            <p class="text-black-75 mb-2 fs-4 wwdP">
               Мы специализируемся на общестроительных работах, строительстве
               частных домов, ангаров, производственных зданий, капитальных
               ремонтах жилых, общественных и не жилых помещений. Наша команда
@@ -230,9 +247,9 @@
         <div class="row g-0">
           <div class="col-lg-4 col-sm-6">
             <a
-              class="portfolio-box"
+              class="portfolio-box portfolioBox1"
               href="assets/img/portfolio/fullsize/1.jpg"
-              title="Project Name"
+              title="Название проекта"
             >
               <img
                 class="img-fluid"
@@ -240,14 +257,16 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
+                <div class="project-category text-white-50 category1">
+                  Category
+                </div>
+                <div class="project-name projName1">Project Name</div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a
-              class="portfolio-box"
+              class="portfolio-box portfolioBox2"
               href="assets/img/portfolio/fullsize/2.jpg"
               title="Project Name"
             >
@@ -257,14 +276,16 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
+                <div class="project-category text-white-50 category2">
+                  Category
+                </div>
+                <div class="project-name projName2">Project Name</div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a
-              class="portfolio-box"
+              class="portfolio-box portfolioBox3"
               href="assets/img/portfolio/fullsize/3.jpg"
               title="Project Name"
             >
@@ -274,14 +295,16 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
+                <div class="project-category text-white-50 category3">
+                  Category
+                </div>
+                <div class="project-name projName3">Project Name</div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a
-              class="portfolio-box"
+              class="portfolio-box portfolioBox4"
               href="assets/img/portfolio/fullsize/4.jpg"
               title="Project Name"
             >
@@ -291,14 +314,16 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
+                <div class="project-category text-white-50 category4">
+                  Category
+                </div>
+                <div class="project-name projName4">Project Name</div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a
-              class="portfolio-box"
+              class="portfolio-box portfolioBox5"
               href="assets/img/portfolio/fullsize/5.jpg"
               title="Project Name"
             >
@@ -308,14 +333,16 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
+                <div class="project-category text-white-50 category5">
+                  Category
+                </div>
+                <div class="project-name projName5">Project Name</div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a
-              class="portfolio-box"
+              class="portfolio-box portfolioBox6"
               href="assets/img/portfolio/fullsize/6.jpg"
               title="Project Name"
             >
@@ -325,8 +352,10 @@
                 alt="..."
               />
               <div class="portfolio-box-caption p-3">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
+                <div class="project-category text-white-50 category6">
+                  Category
+                </div>
+                <div class="project-name projName6">Project Name</div>
               </div>
             </a>
           </div>
@@ -338,49 +367,51 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-12 text-center">
-            <h2 class="mt-0">Краткий перечень общестроительных работ:</h2>
+            <h2 class="mt-0 worksH2">
+              Краткий перечень общестроительных работ:
+            </h2>
             <hr class="divider divider-light" />
             <br /><br />
             <ul class="list-group list-group-flush fs-4">
-              <li class="list-group-item bg-dark text-white">
+              <li class="list-group-item bg-dark text-white worksLi1">
                 <i class="bi bi-chevron-double-right"></i> бетонирование
                 фундаментов, нулевой цикл работ
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi2">
                 <i class="bi bi-chevron-double-right"></i> обустройство,
                 подключение водопровода и канализации
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi3">
                 <i class="bi bi-chevron-double-right"></i> решения по
                 гидроизоляции фундаментов, стен, конструкций, балконов
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi4">
                 <i class="bi bi-chevron-double-right"></i> кладка стен из
                 блоков, кирпича
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi5">
                 <i class="bi bi-chevron-double-right"></i> монтаж перекрытий
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi6">
                 <i class="bi bi-chevron-double-right"></i> строительство кровель
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi7">
                 <i class="bi bi-chevron-double-right"></i> строительство мокрых
                 и вентилируемых фасадов
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi8">
                 <i class="bi bi-chevron-double-right"></i> лестницы любой
                 сложности (маршевые, винтовые)
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi9">
                 <i class="bi bi-chevron-double-right"></i> электрика под ключ,
                 ремонтные работы
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi10">
                 <i class="bi bi-chevron-double-right"></i> строительство и
                 ремонт канализационной, водопроводной системы
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item worksLi11">
                 <i class="bi bi-chevron-double-right"></i> внутренняя отделка
                 (малярные работы, облицовка плиткой, панелями, подвесные
                 потолки)
@@ -393,7 +424,9 @@
     </section>
     <!-- carousel -->
     <br /><br /><br />
-    <h2 class="text-center mt-0">Посмотрите как было и что мы сделали</h2>
+    <h2 class="text-center mt-0 carouselH2">
+      Посмотрите как было и что мы сделали
+    </h2>
     <hr class="divider" />
     <section id="carousel">
       <div class="container">
@@ -477,9 +510,9 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0">Свяжитесь с нами!</h2>
+            <h2 class="mt-0 contactH2">Свяжитесь с нами!</h2>
             <hr class="divider" />
-            <p class="text-muted mb-5">
+            <p class="text-muted mb-5 contactP">
               Готовы начать сотрудничать с нами? Тогда не медлите и присылайте
               ваши заявки через нижестоящую форму!
             </p>
@@ -498,61 +531,75 @@
               <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control nameInput"
                   id="name"
                   type="text"
                   placeholder="Enter your name..."
                   data-sb-validations="required"
                 />
-                <label for="name">Полное имя</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">
+                <label for="name" class="labelName">Полное имя</label>
+                <div
+                  class="invalid-feedback invalName"
+                  data-sb-feedback="name:required"
+                >
                   Требуется имя.
                 </div>
               </div>
               <!-- Email address input-->
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control emailInput"
                   id="email"
                   type="email"
                   placeholder="name@example.com"
                   data-sb-validations="required,email"
                 />
-                <label for="email">Адрес электронной почты</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">
+                <label for="email" class="labelEmail"
+                  >Адрес электронной почты</label
+                >
+                <div
+                  class="invalid-feedback noEmail"
+                  data-sb-feedback="email:required"
+                >
                   Требуется адрес электронной почты.
                 </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
+                <div
+                  class="invalid-feedback invalEmail"
+                  data-sb-feedback="email:email"
+                >
                   Неверный адрес электронной почты.
                 </div>
               </div>
               <!-- Phone number input-->
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control phoneInput"
                   id="phone"
                   type="tel"
-                  placeholder="(123) 456-7890"
+                  placeholder="(+371) 20 000 000"
                   data-sb-validations="required"
                 />
-                <label for="phone">Номер телефона</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                <label for="phone" class="labelPhone">Номер телефона</label>
+                <div
+                  class="invalid-feedback invalPhone"
+                  data-sb-feedback="phone:required"
+                >
                   Необходимо ввести номер телефона.
                 </div>
               </div>
               <!-- Message input-->
               <div class="form-floating mb-3">
                 <textarea
-                  class="form-control"
+                  class="form-control messageInput"
                   id="message"
                   type="text"
                   placeholder="Enter your message here..."
                   style="height: 10rem"
                   data-sb-validations="required"
                 ></textarea>
-                <label for="message">Сообщение</label>
+                <label for="message" class="labelMessage">Сообщение</label>
                 <div
-                  class="invalid-feedback"
+                  class="invalid-feedback invalMsg"
                   data-sb-feedback="message:required"
                 >
                   Требуется ввести сообщение.
@@ -564,7 +611,9 @@
               <!-- has successfully submitted-->
               <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center mb-3">
-                  <div class="fw-bolder">Форма заявки успешно отправлена!</div>
+                  <div class="fw-bolder formSentSucc">
+                    Форма заявки успешно отправлена!
+                  </div>
                   To activate this form, sign up at
                   <br />
                   <a href="https://startbootstrap.com/solution/contact-forms"
@@ -577,14 +626,14 @@
               <!-- This is what your users will see when there is-->
               <!-- an error submitting the form-->
               <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">
+                <div class="text-center text-danger mb-3 formNotSent">
                   Ошибка отправки сообщения!
                 </div>
               </div>
               <!-- Submit Button-->
               <div class="d-grid">
                 <button
-                  class="btn btn-primary btn-xl disabled"
+                  class="btn btn-primary btn-xl disabled formBtn"
                   id="submitButton"
                   type="submit"
                 >
@@ -613,8 +662,6 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
@@ -635,6 +682,7 @@
 
     <!-- carousel  -->
     <script src="js/splide.min.js"></script>
+    <script src="js/lang.js"></script>
     <script>
       var splide = new Splide(".splide", {
         perPage: 2,
@@ -648,5 +696,7 @@
 
       splide.mount();
     </script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
   </body>
 </html>
